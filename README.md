@@ -25,6 +25,7 @@
 
 **(Interspeech, October 2020)** Enhancing Monotonicity for Robust Autoregressive Transformer TTS
 * [paper](https://www.isca-speech.org/archive/Interspeech_2020/pdfs/1751.pdf)
+* [code](https://github.com/keonlee9420/Stepwise_Monotonic_Multihead_Attention) (unofficial implementation)
 * [audio samples](https://thuhcsi.github.io/interspeech2020-monotonicity-transformer-tts/)
 
 **(Interspeech, September 2019)** Knowledge-based Linguistic Encoding for End-to-End Mandarin Text-to-Speech Synthesis
