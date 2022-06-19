@@ -125,16 +125,381 @@
 </section>
 <!-- /page title -->
 
-<!-- section -->
+<!-- papers -->
 <section class="section">
   <div class="container">
+    <!-- paper category navigation bar -->
     <div class="row">
-      <div class="col-12 mb-4">
+      <div class="col-12">
+        <!-- nav tab -->
+        <div class="border-bottom">
+          <ul class="nav nav-pills text-center">
+            <li class="navi-item">
+              <a class="nav-link active" href="#year" data-toggle="pill">
+                  by year
+              </a>
+            </li>
+            <li class="navi-item">
+              <a class="nav-link" href="#area" data-toggle="pill">
+                  by area
+              </a>
+            </li>
+            <li class="navi-item">
+              <a class="nav-link" href="#cat" data-toggle="pill">
+                  by category
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- nav tab content -->
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="year">
+            <div class="col-12">
+              <div class="mb-3"></div>
+              <!-- paper category list -->
+              <ul class="list-inline text-center filter-controls mb-3">
+                <li class="list-inline-item px-2 mb-3 active" data-filter="all">All</li>
+                <li class="list-inline-item px-2 mb-3" data-filter="2022">2022</li>
+                <li class="list-inline-item px-2 mb-3" data-filter="2021">2021</li>
+                <li class="list-inline-item px-2 mb-3" data-filter="2020">2020</li>
+                <li class="list-inline-item px-2 mb-3" data-filter="2019">2019</li>
+                <li class="list-inline-item px-2 mb-3" data-filter="2018">2018</li>
+                <li class="list-inline-item px-2 mb-3" data-filter="2017">2017</li>
+                <li class="list-inline-item px-2 mb-3" data-filter="2016">2016</li>
+                <li class="list-inline-item px-2 mb-3" data-filter="2015">2015</li>
+                <li class="list-inline-item px-2 mb-3" data-filter="2014">2014</li>
+                <li class="list-inline-item px-2 mb-3" data-filter="2013">2013</li>
+                <li class="list-inline-item px-2 mb-3" data-filter="2012">2012</li>
+                <li class="list-inline-item px-2 mb-3" data-filter="2011">2011</li>
+                <li class="list-inline-item px-2 mb-3" data-filter="2010">2010</li>
+                <li class="list-inline-item px-2 mb-3" data-filter="2009">2009</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="area">
+            <div class="col-12">
+              <div class="mb-3"></div>
+              <!-- paper category list -->
+              <ul class="list-inline text-center filter-controls mb-3">
+                <li class="list-inline-item px-2 mb-3 active" data-filter="all">All</li>
+                <li class="list-inline-item px-2 mb-3" data-filter="ss">Speech Synthesis</li>
+                <li class="list-inline-item px-2 mb-3" data-filter="sr">Speech Recognition</li>
+                <li class="list-inline-item px-2 mb-3" data-filter="sv">Speaker Recognition</li>
+                <li class="list-inline-item px-2 mb-3" data-filter="ssp">Speech Signal Processing</li>
+                <li class="list-inline-item px-2 mb-3" data-filter="ac">Affective Computing</li>
+                <li class="list-inline-item px-2 mb-3" data-filter="mslp">Multimodal Speech and Language Processing</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="cat">
+            <div class="col-12">
+              <div class="mb-3"></div>
+              <!-- paper category list -->
+              <ul class="list-inline text-center filter-controls mb-3">
+                <li class="list-inline-item px-2 mb-3 active" data-filter="all">All</li>
+                <li class="list-inline-item px-2 mb-3" data-filter="jnl">Journal</li>
+                <li class="list-inline-item px-2 mb-3"  data-filter="cf">Conference</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- papers list -->
+    <div class="filtr-container">
+      <!-- paper -->
+      <div data-category="2021,jnl,ac" class="col-12 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Xixin WU, Yuewen CAO, Hui LU, Songxiang LIU, Disong WANG, Zhiyong WU, Xunying LIU, Helen MENG,
+            "Speech Emotion Recognition Using Sequential Capsule Networks,"
+            <i>IEEE/ACM Transactions on Audio, Speech, and Language Processing (TASLP)</i>,
+            vol. 29, pp. 3280-3291. IEEE, October, 2021.
+            <span class="text-lighten">(SCI: WOS:000714713700004, EI: 20214311082562, CCF-A)</span>
+            <ul class="list-inline bg-gray mt-1">
+              <li class="list-inline-item"><a class="d-inline-block text-light" href="https://ieeexplore.ieee.org/abstract/document/9576634">Paper</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Code</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Demo</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- paper -->
+      <div data-category="2021,jnl,ss,ac" class="col-12 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Xixin WU, Yuewen CAO, Hui LU, Songxiang LIU, Shiyin KANG, Zhiyong WU, Xunying LIU, Helen MENG,
+            "Exemplar-Based Emotive Speech Synthesis,"
+            <i>IEEE/ACM Transactions on Audio, Speech, and Language Processing (TASLP)</i>,
+            vol. 29, pp. 874-886. IEEE, January, 2021.
+            <span class="text-lighten">(SCI: WOS:000619310400001, EI: 20210409830187, CCF-A)</span>
+            <ul class="list-inline bg-gray mt-1">
+              <li class="list-inline-item"><a class="d-inline-block text-light" href="https://ieeexplore.ieee.org/abstract/document/9328288">Paper</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Code</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Demo</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- paper -->
+      <div data-category="2021,cf,mslp" class="col-12 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Yingmei GUO, Linjun SHOU, Jian PEI, Ming GONG, Mingxing XU, Zhiyong WU, Daxin JIANG,
+            "Learning from Multiple Noisy Augmented Data Sets for Better Cross-Lingual Spoken Language Understanding,"
+            [in] <i>Proc. 2021 Conference on Empirical Methods in Natural Language Processing (EMNLP)</i>,
+            pp. 1-12. Punta Cana, Dominican Republic, November 7-11, 2021.
+            <span class="text-lighten">(EI: 20221411909706, THU-A)</span>
+            <ul class="list-inline bg-gray mt-1">
+              <li class="list-inline-item"><a class="d-inline-block text-light" href="https://arxiv.org/abs/2109.01583">Paper</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Code</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Demo</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- paper -->
+      <div data-category="2021,cf,ss" class="col-12 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Yaohua BU, Tianyi MA, Weijun LI, Hang ZHOU, Jia JIA, Shengqi CHEN, Kaiyuan XU, Dachuan SHI, Haozhe WU, Zhihan YANG, Kun LI, Zhiyong WU, Yuanchun SHI, Xiaobo LU, Ziwei LIU,
+            "PTeacher: A Computer-Aided Personalized Pronunciation Training System with Exaggerated Audio-Visual Corrective Feedback,"
+            [in] <i>Proc. 2021 CHI Conference on Human Factors in Computing Systems (CHI)</i>,
+            pp. 1-14. Yokohama, Japan, May 8-13, 2021.
+            <span class="text-lighten">(EI: 20212210439123, CCF-A)</span>
+            <ul class="list-inline bg-gray mt-1">
+              <li class="list-inline-item"><a class="d-inline-block text-light" href="https://dl.acm.org/doi/abs/10.1145/3411764.3445490">Paper</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Code</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light" href="https://hcsi.cs.tsinghua.edu.cn/demo/CHI21-BUYAOHUA.mp4">Demo</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- paper -->
+      <div data-category="2021,cf,ac" class="col-12 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Suping ZHOU, Jia JIA, Zhiyong WU, Zhihan YANG, Yanfeng WANG, Wei CHEN, Fanbo MENG, Shuo HUANG, Jialie SHEN, Xiaochuan WANG,
+            "Inferring Emotion from Large-Scale Internet Voice Data: A Semi-supervised Curriculum Augmentation based Deep Learning Approach,"
+            [in] <i>Proc. the 35th AAAI Conference on Artificial Intelligence (AAAI)</i>,
+            pp. 6039-6047. Virtual, Online, February 2-9, 2021.
+            <span class="text-lighten">(EI: 20222012114882, CCF-A)</span>
+            <ul class="list-inline bg-gray mt-1">
+              <li class="list-inline-item"><a class="d-inline-block text-light" href="https://hcsi.cs.tsinghua.edu.cn/Paper/Paper21/AAAI21-ZHOUSUPING.pdf">Paper</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Code</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Demo</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- paper -->
+      <div data-category="2019,cf,ac,mslp" class="col-12 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Runnan LI, Zhiyong WU, Jia JIA, Yaohua BU, Sheng ZHAO, Helen MENG,
+            "Towards Discriminative Representation Learning for Speech Emotion Recognition,"
+            [in] <i>Proc. International Joint Conference on Artificial Intelligence (IJCAI)</i>,
+            pp. 5060-5066. Macao, China, August 10-16, 2019.
+            <span class="text-lighten">(EI: 20194607696464, CCF-A)</span>
+            <ul class="list-inline bg-gray mt-1">
+              <li class="list-inline-item"><a class="d-inline-block text-light" href="https://www.ijcai.org/proceedings/2019/0703.pdf">Paper</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light" href="https://github.com/thuhcsi/IJCAI2019-DRL4SER">Code</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Code</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- paper -->
+      <div data-category="2019,jnl,ss" class="col-12 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Yishuang NING, Sheng HE, Zhiyong WU, Chunxiao XING, Liangjie ZHANG,
+            "A Review of Deep Learning Based Speech Synthesis,"
+            <i>Applied Sciences-Basel</i>,
+            vol. 9, no. 19, pp. 4050. MDPI, September, 2019.
+            <span class="text-lighten">(SCI: WOS:000496258100108)</span>
+            <ul class="list-inline bg-gray mt-1">
+              <li class="list-inline-item"><a class="d-inline-block text-light" href="https://www.mdpi.com/2076-3417/9/19/4050">Paper</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Code</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Demo</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- paper -->
+      <div data-category="2018,cf,ac,mslp" class="col-12 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Runnan LI, Zhiyong WU, Jia JIA, Jingbei LI, Wei CHEN, Helen MENG,
+            "Inferring User Emotive State Changes in Realistic Human-Computer Conversational Dialogs,"
+            [in] <i>Proc. ACM Multimedia Conference (ACM MM)</i>,
+            pp. 136-144. Seoul, Korea, October 22-26, 2018.
+            <span class="text-lighten">(EI: 20185006246269, CCF-A)</span>
+            <ul class="list-inline bg-gray mt-1">
+              <li class="list-inline-item"><a class="d-inline-block text-light" href="https://dl.acm.org/doi/abs/10.1145/3240508.3240575">Paper</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Code</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Demo</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- paper -->
+      <div data-category="2018,jnl,sr" class="col-12 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Kun LI, Shaoguang MAO, Xu LI, Zhiyong WU, Helen MENG,
+            "Automatic Lexical Stress and Pitch Accent Detection for L2 English Speech using Multi-Distribution Deep Neural Networks,"
+            <i>Speech Communication (Speech Com)</i>,
+            vol. 96, pp. 28-36. Elsevier, February, 2018.
+            <span class="text-lighten">(SCI: WOS:000424723700003, EI: 20174704448303, CCF-B)</span>
+            <ul class="list-inline bg-gray mt-1">
+              <li class="list-inline-item"><a class="d-inline-block text-light" href="https://www.sciencedirect.com/science/article/pii/S0167639315300637">Paper</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Code</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Demo</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- paper -->
+      <div data-category="2017,cf,ac,mslp" class="col-12 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Yishuang NING, Jia JIA, Zhiyong WU, Runnan LI, Yongsheng AN, Yanfeng WANG, Helen MENG,
+            "Multi-task Deep Learning for User Intention Understanding in Speech Interaction Systems,"
+            [in] <i>Proc. the 31th AAAI Conference on Artificial Intelligence (AAAI)</i>,
+            pp. 161-167. San Francisco, USA, February 4-9, 2017.
+            <span class="text-lighten">(EI: 20174104242835, CCF-A)</span>
+            <ul class="list-inline bg-gray mt-1">
+              <li class="list-inline-item"><a class="d-inline-block text-light" href="https://ojs.aaai.org/index.php/AAAI/article/view/10493">Paper</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Code</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Demo</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- paper -->
+      <div data-category="2015,jnl,ss" class="col-12 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Zhiyong WU, Yishuang NING, Xiao ZANG, Jia JIA, Fanbo MENG, Helen MENG, Lianhong CAI,
+            "Generating Emphatic Speech with Hidden Markov Model for Expressive Speech Synthesis,"
+            <i>Multimedia Tools and Applications (MTA)</i>,
+            vol. 74, no. 22, pp. 9909-9925. Springer, July, 2015.
+             <span class="text-lighten">(SCI: WOS:000364019400005, EI: 20143600027913, CCF-C)</span>
+            <ul class="list-inline bg-gray mt-1">
+              <li class="list-inline-item"><a class="d-inline-block text-light" href="https://link.springer.com/article/10.1007/s11042-014-2164-2">Paper</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Code</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Demo</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- paper -->
+      <div data-category="2015,jnl,ss" class="col-12 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Zhiyong WU, Kai ZHAO, Xixin WU, Xinyu LAN, Helen MENG,
+            "Acoustic to Articulatory Mapping with Deep Neural Network,"
+            <i>Multimedia Tools and Applications (MTA)</i>,
+            vol. 74, no. 22, pp. 9889-9907. Springer, August, 2015.
+            <span class="text-lighten">(SCI: WOS:000364019400004, EI: 20143600014973, CCF-C)</span>
+            <ul class="list-inline bg-gray mt-1">
+              <li class="list-inline-item"><a class="d-inline-block text-light" href="https://link.springer.com/article/10.1007/s11042-014-2183-z">Paper</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Code</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Demo</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- paper -->
+      <div data-category="2015,cf,ss,mslp" class="col-12 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Qi LYU, Zhiyong WU, Jun ZHU,
+            "Polyphonic Music Modelling with LSTM-RTRBM,"
+            [in] <i>Proc. ACM Multimedia Conference (ACM MM)</i>,
+            pp. 991-994. Brisbane, Australia, October 26-30, 2015.
+            <span class="text-lighten">(EI: 20161602252616, CCF-A)</span>
+            <ul class="list-inline bg-gray mt-1">
+              <li class="list-inline-item"><a class="d-inline-block text-light" href="https://dl.acm.org/doi/abs/10.1145/2733373.2806383">Paper</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Code</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Demo</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- paper -->
+      <div data-category="2015,cf,ss,mslp" class="col-12 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Qi LYU, Zhiyong WU, Jun ZHU, Helen MENG,
+            "Modelling High-dimensional Sequences with LSTM-RTRBM: Application to Polyphonic Music Generation,"
+            [in] <i>Proc. International Joint Conference on Artificial Intelligence (IJCAI)</i>,
+            pp. 4138-4139. Buenos Aires, Argentina, July 25-31, 2015.
+            <span class="text-lighten">(EI: 20155101693661, CCF-A)</span>
+            <ul class="list-inline bg-gray mt-1">
+              <li class="list-inline-item"><a class="d-inline-block text-light" href="https://www.ijcai.org/Proceedings/15/Papers/582.pdf">Paper</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Code</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Demo</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- paper -->
+      <div data-category="2014,jnl,ss" class="col-12 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Fanbo MENG, Zhiyong WU, Jia JIA, Helen MENG, Lianhong CAI,
+            "Synthesizing English Emphatic Speech for Multimodal Corrective Feedback in Computer-Aided Pronunciation Training,"
+            <i>Multimedia Tools and Applications (MTA)</i>,
+            vol. 73, no. 1, pp. 463-489. Springer, September, 2014.
+            <span class="text-lighten">(SCI: WOS:000342418700022, EI: 20143600046713, CCF-C)</span>
+            <ul class="list-inline bg-gray mt-1">
+              <li class="list-inline-item"><a class="d-inline-block text-light" href="https://link.springer.com/article/10.1007/s11042-013-1601-y">Paper</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Code</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Demo</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- paper -->
+      <div data-category="2014,jnl,ss,mslp" class="col-12 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Jia JIA, Zhiyong WU, Shen ZHANG, Helen MENG, Lianhong CAI,
+            "Head and Facial Gestures Synthesis using PAD Model for an Expressive Talking Avatar,"
+            <i>Multimedia Tools and Applications (MTA)</i>,
+            vol. 73, no. 1, pp. 439-461. Springer, September, 2014.
+            <span class="text-lighten">(SCI: WOS:000342418700023, EI: 20143600046670, CCF-C)</span>
+            <ul class="list-inline bg-gray mt-1">
+              <li class="list-inline-item"><a class="d-inline-block text-light" href="https://link.springer.com/article/10.1007/s11042-013-1604-8">Paper</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Code</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Demo</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- paper -->
+      <div data-category="2009,jnl,ac,ss" class="col-12 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Zhiyong WU, Helen M. MENG, Hongwu YANG, Lianhong CAI,
+            "Modeling the Expressivity of Input Text Semantics for Chinese Text-to-Speech Synthesis in a Spoken Dialog System,"
+            <i>IEEE Transaction on Audio, Speech and Language Processing (TASLP)</i>,
+            vol. 17, no. 8, pp. 1567-1577. IEEE, November, 2009.
+            <span class="text-lighten">(SCI: WOS:000268903600010, EI: 20093612281690, CCF-A)</span>
+            <ul class="list-inline bg-gray mt-1">
+              <li class="list-inline-item"><a class="d-inline-block text-light" href="https://ieeexplore.ieee.org/abstract/document/4926212">Paper</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Code</a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light">Demo</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
-<!-- /section -->
+<!-- /papers -->
 
 <!-- footer -->
 <footer>

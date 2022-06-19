@@ -125,16 +125,586 @@
 </section>
 <!-- /page title -->
 
-<!-- section -->
+<style>
+.zoomImage{
+  width:100%;
+  height:0;
+  padding-bottom: 133.33%;
+  overflow:hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  background-size:cover;
+}
+</style>
+
+<!-- students -->
 <section class="section">
   <div class="container">
     <div class="row">
-      <div class="col-12 mb-4">
+      <div class="col-12">
+        <!-- student category list -->
+        <ul class="list-inline text-center filter-controls mb-5">
+          <li class="list-inline-item m-3 active" data-filter="all">All</li>
+          <li class="list-inline-item m-3" data-filter="phd">PhD Students</li>
+          <li class="list-inline-item m-3" data-filter="ms">Master Students</li>
+          <li class="list-inline-item m-3" data-filter="grd17">Grade 2017</li>
+          <li class="list-inline-item m-3" data-filter="grd19">Grade 2019</li>
+          <li class="list-inline-item m-3" data-filter="grd20">Grade 2020</li>
+          <li class="list-inline-item m-3" data-filter="grd21">Grade 2021</li>
+          <li class="list-inline-item m-3" data-filter="grd22">Grade 2022</li>
+        </ul>
       </div>
     </div>
+    <!-- students list -->
+    <div class="row filtr-container">
+      <!-- student -->
+      <div data-category="phd, grd17" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/17_陈雨兰_Chen_Yulan.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">陈雨兰</h4>
+            </p>
+            <p>Ph.D. 2017</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="phd, grd19" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/19_黎静北_li_jingbei.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">黎静北</h4>
+            </p>
+            <p>Ph.D. 2019</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="phd, grd21" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/21_陈礼扬_Chen\ Liyang.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">陈礼扬</h4>
+            </p>
+            <p>Ph.D. 2021</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="phd, grd21" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/21_谢靖然_Xie\ Jingran.jpg)" >
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">谢靖然</h4>
+            </p>
+            <p>Ph.D. 2021</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="phd, grd22" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/22_宋长河_song_changhe.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">宋长河</h4>
+            </p>
+            <p>Ph.D. 2022</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd20" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/20_陈杰_Chen\ Jie.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">陈杰</h4>
+            </p>
+            <p>M.E. 2020</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd20" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/20_陈学源_Chen\ Xueyuan.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">陈学源</h4>
+            </p>
+            <p>M.E. 2020</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd20" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/20_戴文琳_Dai\ Wenlin.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">戴文琳</h4>
+            </p>
+            <p>M.E. 2020</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd20" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/20_李陈依_Li\ Chenyi.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">李陈依</h4>
+            </p>
+            <p>M.E. 2020</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd20" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/20_李思磐_Li\ Sipan.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">李思磐</h4>
+            </p>
+            <p>M.E. 2020</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd20" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/20_李翔_Li\ Xiang.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">李翔</h4>
+            </p>
+            <p>M.E. 2020</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd20" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/20_孟一_Meng\ Yi.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">孟一</h4>
+            </p>
+            <p>M.E. 2020</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd20" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/20_谭美唯_Markey\ TAN.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">谭美唯</h4>
+            </p>
+            <p>M.E. 2020</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd20" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/20_杨玉杰_Yang\ Yujie.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">杨玉杰</h4>
+            </p>
+            <p>M.E. 2020</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd20" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/20_叶文轩_Ye\ Wenxuan.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">叶文轩</h4>
+            </p>
+            <p>M.E. 2020</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd20" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/20_运远潼_Yun\ Yuantong.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">运远潼</h4>
+            </p>
+            <p>M.E. 2020</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd20" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/20_曾可为_Zeng\ Kewei.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">曾可为</h4>
+            </p>
+            <p>M.E. 2020</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd20" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/20_张露文_Zhang\ Luwen.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">张露文</h4>
+            </p>
+            <p>M.E. 2020</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd20" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/20_张阳_Zhang\ Yang.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">张阳</h4>
+            </p>
+            <p>M.E. 2020</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd20" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/20_赵欣陶_Zhao\ Xintao.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">赵欣陶</h4>
+            </p>
+            <p>M.E. 2020</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd20" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/20_周逸轩_Zhou\ Yixuan.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">周逸轩</h4>
+            </p>
+            <p>M.E. 2020</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd21" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/21_鲍威弘_Bao\ Weihong.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">鲍威弘</h4>
+            </p>
+            <p>M.E. 2021</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd21" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/21_陈平_Chen\ Ping.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">陈平</h4>
+            </p>
+            <p>M.E. 2021</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd21" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/21_陈鋆_Chen\ Jun.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">陈鋆</h4>
+            </p>
+            <p>M.E. 2021</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd21" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/21_成明_Cheng\ Ming.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">成明</h4>
+            </p>
+            <p>M.E. 2021</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd21" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/21_雷舜_Lei\ Shun.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">雷舜</h4>
+            </p>
+            <p>M.E. 2021</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd21" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/21_林久鑫_Lin\ Jiuxin.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">林久鑫</h4>
+            </p>
+            <p>M.E. 2021</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd21" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/21_童玮男_Tong\ Weinan.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">童玮男</h4>
+            </p>
+            <p>M.E. 2021</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd21" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/21_王媛媛_Wang\ Yuanyuan.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">王媛媛</h4>
+            </p>
+            <p>M.E. 2021</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd21" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/21_王子林_Wang\ Zilin.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">王子林</h4>
+            </p>
+            <p>M.E. 2021</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd21" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/21_肖龙_Xiao\ Long.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">肖龙</h4>
+            </p>
+            <p>M.E. 2021</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd21" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/21_杨思程_Yang\ Sicheng.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">杨思程</h4>
+            </p>
+            <p>M.E. 2021</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd21" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/21_杨智涵_Yang\ Zhihan.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">杨智涵</h4>
+            </p>
+            <p>M.E. 2021</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd21" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/21_周绍焕_Zhou\ Shaohuan.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">周绍焕</h4>
+            </p>
+            <p>M.E. 2021</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd21" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/21_朱佳旭_Zhu\ Jiaxu.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">朱佳旭</h4>
+            </p>
+            <p>M.E. 2021</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd21" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/21_庄昊霖_Zhuang\ Haolin.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">庄昊霖</h4>
+            </p>
+            <p>M.E. 2021</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd22" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/22_蔡韫睿_Cai\ Yunrui.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">蔡韫睿</h4>
+            </p>
+            <p>M.E. 2022</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd22" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/22_何旭_He\ Xu.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">何旭</h4>
+            </p>
+            <p>M.E. 2022</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd22" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/22_黄翘楚_Huang\ Qiaochu.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">黄翘楚</h4>
+            </p>
+            <p>M.E. 2022</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd22" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/22_李伟钦_Li\ Weiqin.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">李伟钦</h4>
+            </p>
+            <p>M.E. 2022</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd22" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/22_林志伟_Lin\ Zhiwei.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">林志伟</h4>
+            </p>
+            <p>M.E. 2022</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd22" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/22_沙斌竹_Sha\ Binzhu.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">沙斌竹</h4>
+            </p>
+            <p>M.E. 2022</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd22" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/22_唐博识_Tang\ Boshi.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">唐博识</h4>
+            </p>
+            <p>M.E. 2022</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd22" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/22_徐耀勋_Xu\ Yaoxun.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">徐耀勋</h4>
+            </p>
+            <p>M.E. 2022</p>
+          </div>
+        </div>
+      </div>
+      <!-- student -->
+      <div data-category="ms, grd22" class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 filtr-item">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0 zoomImage" style="background-image:url(images/students/22_薛海威_Xue\ Haiwei.jpg)">
+          <div class="card-body">
+            <p>
+              <h4 class="card-title">薛海威</h4>
+            </p>
+            <p>M.E. 2022</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /students list -->
   </div>
+  <!-- /container -->
 </section>
-<!-- /section -->
+<!-- /students -->
 
 <!-- footer -->
 <footer>

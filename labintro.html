@@ -30,6 +30,9 @@
   <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
   <link rel="icon" href="images/favicon.jpg" type="image/x-icon">
 
+  <!-- baidu map api -->
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=NyBlIgDLI15XyHmhM46triv4i0mqeyVv&s=1"></script>
+
 </head>
 
 <body>
@@ -126,15 +129,191 @@
 <!-- /page title -->
 
 <!-- section -->
-<section class="section">
+<section class="section pb-0">
   <div class="container">
     <div class="row">
+      <div class="col-12 mb-5">
+        <!-- lab thumb -->
+        <img src="images/labinfo/hcsi-2-sm.jpg" class="img-fluid w-100">
+      </div>
+    </div>
+    <!-- lab details -->
+    <div class="row">
       <div class="col-12 mb-4">
+        <h3 class="mb-3">Lab Introduction</h3>
+        <p>Human-Computer Speech Interaction Lab at Tsinghua University (THUHCSI) targets artificial intelligence (AI) technologies for smart voice user interface (VUI). We specializes in speech synthesis, speech recognition, speaker recognition, speech enhancement, affective computing, natural launguage understanding and generation, multimodal multimedia information processing. THUHCSI jointly establishes "Tsinghua-CUHK Joint Research Center for Media Sciences, Technologies and Systems" with Faculty of Engineering of The Chinese University of Hong Kong since 2006. It showcases Guangdong-Hong Kong, Shenzhen-Hong Kong collaborative example in science and technology initiative promoted by Shenzhen municipal government.</p>
+        <p>THUHCSI took lead or particiapated in series of projects, including National Key Technology R&D Program, National High-tech R&D Program (863 Program), National Key Basic Research Project Program (973 Program), National Natural Science Foundation of China (NSFC), as well as NSFC-RGC (Research Grants Council of Hong Kong) joint research scheme. THUHCSI also has diversified collaborations with major academic instistutions and industrial partners, e.g. Microsoft, Tencent, ByteDance, XVerse, MI, TAL, Databaker.</p>
+        <p>THUHCSI received the 2009 and 2016 Ministry of Education (MoE) Higher Education Outstanding Scientific Research Output Award in Technological Advancements. THUHCSI owned more than 20 patents, and published more than 100 papers on peer-reviewed international conferences and journals, including IEEE/ACM TASLP, TAC, TMM, AAAI, ACM Multimedia, IJCAI, EMNLP, ICASSP, INTERSPEECH, ICME, ICIP, etc.</p>
+        <p>Dozens of master and PhD students have graduated from THUHCSI. Many of them won several honors such as Outstanding Dissertation of Tsinghua University, Outstanding Graduate Students, etc.</p>
+      </div>
+      <div class="col-12 mb-4">
+        <h3 class="mb-3">实验室简介</h3>
+        <p>清华大学人机语音交互实验室（THUHCSI）聚焦人工智能场景下的智能语音交互技术研究，包括语音合成、语音识别、说话人识别、语音增强、情感计算、自然语言理解与生成、多模态人机交互等。实验室与香港中文大学工程学院联合成立了“清华大学-香港中文大学媒体科学、技术与系统联合研究中心”，自2006年以来一直积极开展学术交流与合作，是深圳市政府加强粤港、深港科技合作交流政策的具体体现。</p>
+        <p>实验室曾多次负责或参加国家科技攻关、国家高技术研究发展计划（863）各类课题、国家重点基础研究发展计划（973）研究项目，以及国家自然科学基金重点项目、面上项目、地区合作项目等课题，并取得多项国内外领先的研究成果。实验室与多个重点大学、互联网智能语音交互公司如腾讯、微软、虎牙、字节跳动、思必驰、小米、标贝等有着紧密的友好合作关系。</p>
+        <p>多次荣获教育部科技进步奖等部委级以上奖项。在IEEE/ACM TASLP、TAC、TMM、AAAI、ACM Multimedia、IJCAI、EMNLP、ICASSP、INTERSPEECH、ICME、ICIP等国内外主流学术刊物和会议上发表论文100余篇。拥有发明专利20余项。</p>
+        <p>培养硕士博士研究生数十人，多人次获得清华大学优秀学位论文、清华大学优秀毕业生、北京市优秀毕业生等荣誉，在2017全球极客大赛“AI仿声验声攻防赛”中斩获桂冠。获清华大学教学优秀奖。</p>
+      </div>
+      <div class="col-12 mb-4">
+        <h3 class="mb-3">Visit Us</h3>
+        <div class="col-12">
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="list-styled-unsuojin">
+                <li>Room 1701, Information Building, Tsinghua Campus, The University Town, Shenzhen 518055, China</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-styled-unsuojin">
+                <li>深圳市南山区西丽大学城清华校区信息大楼1701</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 <!-- /section -->
+
+<!-- map -->
+<section class="section pt-0">
+  <!-- Baidu Map -->
+  <div id="map_canvas"></div>
+</section>
+<!-- /map -->
+
+<!-- baidu map -->
+<script type="text/javascript">
+  //创建和初始化地图函数：
+  function initMap(){
+    createMap();//创建地图
+    //setMapEvent();//设置地图事件
+    addMapControl();//向地图添加控件
+    addMarker();//向地图中添加marker
+  }
+
+  //创建地图函数：
+  function createMap(){
+    var map = new BMap.Map("map_canvas");//在百度地图容器中创建一个地图
+    var point = new BMap.Point(113.97460,22.59846);//定义一个中心点坐标
+    map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+    window.map = map;//将map变量存储在全局
+  }
+
+  //地图事件设置函数：
+  function setMapEvent(){
+    map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+    map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+    map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+    map.enableKeyboard();//启用键盘上下左右键移动地图
+  }
+
+  //定义设置中心位置控件类
+  function CenterControl(){
+    this.defaultAnchor = BMAP_ANCHOR_TOP_RIGHT;
+    this.defaultOffset = new BMap.Size(20, 20)
+  }
+  //通过JavaScript的prototype属性继承于BMap.Control
+  CenterControl.prototype = new BMap.Control();
+  //自定义控件必须实现自己的initialize方法，并且将控件的DOM元素返回
+  //在本方法中创建个div元素作为控件的容器，并将其添加到地图容器中
+  CenterControl.prototype.initialize = function(map){
+    //创建一个dom元素
+    var div = document.createElement('div');
+    //添加文字说明
+    div.appendChild(document.createTextNode('Find Us'));
+    // 设置样式
+    div.style.cursor = "pointer";
+    div.style.padding = "7px 10px";
+    div.style.boxShadow = "0 2px 6px 0 rgba(27, 142, 236, 0.5)";
+    div.style.borderRadius = "5px";
+    div.style.backgroundColor = "white";
+    // 绑定事件,点击设置中心
+    div.onclick = function(e){
+      var point = new BMap.Point(113.97460,22.59846);//定义一个中心点坐标
+      map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+    }
+    // 添加DOM元素到地图中
+    map.getContainer().appendChild(div);
+    // 将DOM元素返回
+    return div;
+  }
+        
+  //地图控件添加函数：
+  function addMapControl(){
+    //向地图中添加缩放控件
+    var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+    map.addControl(ctrl_nav);
+    //向地图中添加缩略图控件
+    var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+    map.addControl(ctrl_ove);
+    //向地图中添加比例尺控件
+    var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+    map.addControl(ctrl_sca);
+    //向地图中添加中心位置控件
+    var ctrl_cnt = new CenterControl();
+    map.addControl(ctrl_cnt);
+  }
+
+  //标注点数组
+  var markerArr = [{title:"清华大学人机语音交互实验室<br>(THUHCSI)",hint:"清华大学人机语音交互实验室\n(THUHCSI)",content:"地址：广东省深圳市南山区西丽大学城清华校区信息大楼1701",point:"113.97460|22.59846",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+  ];
+  //创建marker
+  function addMarker(){
+    for(var i=0;i<markerArr.length;i++){
+      var json = markerArr[i];
+      var p0 = json.point.split("|")[0];
+      var p1 = json.point.split("|")[1];
+      var point = new BMap.Point(p0,p1);
+      var iconImg = createIcon(json.icon);
+      var marker = new BMap.Marker(point,{icon:iconImg});
+      var iw = createInfoWindow(i);
+      var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+      marker.setLabel(label);
+      map.addOverlay(marker);
+      label.setStyle({
+        borderColor:"#808080",
+        color:"#333",
+        cursor:"pointer"
+      });
+      (function(){
+        var index = i;
+        var _iw = createInfoWindow(i);
+        var _marker = marker;
+        _marker.addEventListener("click",function(){
+          this.openInfoWindow(_iw);
+        });
+        _iw.addEventListener("open",function(){
+          _marker.getLabel().hide();
+        })
+        _iw.addEventListener("close",function(){
+          _marker.getLabel().show();
+        })
+        label.addEventListener("click",function(){
+          _marker.openInfoWindow(_iw);
+        })
+        if(!!json.isOpen){
+          label.hide();
+          _marker.openInfoWindow(_iw);
+        }
+      })()
+    }
+  }
+  //创建InfoWindow
+  function createInfoWindow(i){
+    var json = markerArr[i];
+    var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.hint + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+    return iw;
+  }
+  //创建一个Icon
+  function createIcon(json){
+    var icon = new BMap.Icon("https://map.baidu.com/image/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+    return icon;
+  }
+
+  initMap();//创建和初始化地图
+</script>
+<!-- /baidu map -->
 
 <!-- footer -->
 <footer>
@@ -190,7 +369,7 @@
 <script src="plugins/venobox/venobox.min.js"></script>
 <!-- filter -->
 <script src="plugins/filterizr/jquery.filterizr.min.js"></script>
-
+  
 <!-- Main Script -->
 <script src="js/script.js"></script>
 
