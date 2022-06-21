@@ -230,6 +230,18 @@ h6, .h6 {
   color: #fff;
 }
 
+.btn-round {
+  background: #d6d6e0;
+  color: #5c5c77;
+  padding: 0px 8px;
+  border-radius:10px;
+}
+
+.btn-round:hover {
+  background: #1871B9;
+  color: #87CEFA;
+}
+
 body {
   background-color: #fff;
   overflow-x: hidden;
