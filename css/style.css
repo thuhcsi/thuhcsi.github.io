@@ -607,6 +607,19 @@ textarea.form-control {
   background-color: #1a1a37;
 }
 
+@media (max-width: 991px) {
+  .nav-bg {
+    background-color: #1a1a37;
+    opacity: 0.5;
+  }
+  .nav-bg .navbar-brand img {
+    width: 100px;
+  }
+  .nav-bg:hover {
+    opacity: 1.0;
+  }
+}
+
 .nav-item {
   margin: 0 15px;
   position: relative;
